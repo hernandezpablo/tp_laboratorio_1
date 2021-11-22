@@ -7,13 +7,7 @@
 #include "Controller.h"
 #include "../inc/LinkedList.h"
 
-/** \brief Carga los datos de los empleados desde el archivo data.csv (modo texto).
- *
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
+
 int controller_loadFromText(char* path, LinkedList* pArrayListEmployee)
 {
 int todoOk = 0;
@@ -41,13 +35,6 @@ int todoOk = 0;
     return todoOk;
 }
 
-/** \brief Carga los datos de los empleados desde el archivo data.csv (modo binario).
- *
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
 int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee)
 {
 int todoOk = 0;
@@ -76,13 +63,6 @@ int todoOk = 0;
     return todoOk;
 }
 
-/** \brief Alta de empleados
- *
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
 int controller_addEmployee(LinkedList* pArrayListEmployee)
 {
 int todoOk = 0;
@@ -119,12 +99,7 @@ int todoOk = 0;
     }
     return todoOk;
 }
-/** \brief Modificar datos de un empleado
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
+
 int controller_editEmployee(LinkedList* pArrayListEmployee)
 {
 int todoOk =0;
@@ -255,12 +230,7 @@ int menuEdicion()
     scanf("%d", &opcion);
     return opcion;
 }
-/** \brief Elimina un empleado de la lista
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
+
 int controller_removeEmployee(LinkedList* pArrayListEmployee)
 {
 int todoOk = 0;
@@ -301,13 +271,6 @@ int todoOk = 0;
     return todoOk;
 }
 
-/** \brief Lista todos los empleados de una lista
- *
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
 int controller_ListEmployee(LinkedList* pArrayListEmployee)
 {
     int todoOk = 0;
@@ -326,13 +289,6 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
     return todoOk;
 }
 
-/** \brief Ordenar los empleados con distintos criterios
- *
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
 int controller_sortEmployee(LinkedList* pArrayListEmployee)
 {
     char seguir = 's';
@@ -398,7 +354,6 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
         while(seguir == 's');
     }
     return todoOk;
-
 }
 
 int menuOrdenar()
@@ -445,13 +400,6 @@ int todoOk= 0;
     return todoOk;
 }
 
-/** \brief Guarda los datos de los empleados en el archivo data.csv (modo texto).
- *
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
 int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
 {
     int todoOk = 0;
@@ -491,13 +439,6 @@ int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
     return todoOk;
 }
 
-/** \brief Guarda los datos de los empleados en el archivo data.csv (modo binario).
- *
- * \param path char*
- * \param pArrayListEmployee LinkedList*
- * \return int
- *
- */
 int controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee)
 {
 int todoOk = 0;
