@@ -5,20 +5,15 @@ int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee);
 int controller_addEmployee(LinkedList* pArrayListEmployee);
 
 int controller_editEmployee(LinkedList* pArrayListEmployee);
-int menuEdit();
-
+int menuEdicion();
 int controller_removeEmployee(LinkedList* pArrayListEmployee);
-
 int controller_ListEmployee(LinkedList* pArrayListEmployee);
-
 int controller_sortEmployee(LinkedList* pArrayListEmployee);
-int menuSort();
+int menuOrdenar();
 int compararEmpleadosHorasTrabajadas(void* employeeA, void* employeeB);
 int compararEmpleadosSueldo(void* employeeA, void* employeeB);
-
 int controller_saveAsText(char* path , LinkedList* pArrayListEmployee);
 int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee);
-
 int controller_remplaceEmployee(LinkedList* pArrayListEmployee);
 int controller_clearList(LinkedList* pArrayListEmployee);
 int controller_deleteList(LinkedList* pArrayListEmployee);
