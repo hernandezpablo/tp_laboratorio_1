@@ -11,14 +11,6 @@ int encontrarParidad(int numero) {
 	}
 	return todoOk;
 }
-
-int pedirEntero() {
-	int entero;
-	printf("Ingrese un numero entero: ");
-	scanf("%d", &entero);
-	return entero;
-}
-
 int pedirEnteroRango(int min, int max) {
 	int entero;
 	printf("Ingrese un numero entero: ");
@@ -34,15 +26,32 @@ int pedirEnteroRango(int min, int max) {
 int validarDistintoDeCero(int numero) {
 	int todoOk = 0;
 	if (numero != 0) {
-		todoOk = 1;
+    todoOk = 1;
 	}
 	return todoOk;
+}
+int pedirEntero(){
+	int entero;
+	printf("Ingrese un numero entero: ");
+	scanf("%d", &entero);
+	return entero;
 }
 
 int validarDecimales(float numero) {
 	int todoOk = 0;
 	if (numero == (int) numero) {
 		todoOk = 1;
+	}
+	return todoOk;
+}
+
+int validarCadena(char vect[]) {
+	int todoOk = 0;
+	for (int i = 0; i < miStrlen(vect); i++) {
+		if (!(isalpha(vect[i]))) {
+			todoOk = 1;
+			break;
+		}
 	}
 	return todoOk;
 }
@@ -58,18 +67,6 @@ int miStrlen(char vect[]) {
 	}
 	return cantidad;
 }
-
-int validarCadena(char vect[]) {
-	int todoOk = 0;
-	for (int i = 0; i < miStrlen(vect); i++) {
-		if (!(isalpha(vect[i]))) {
-			todoOk = 1;
-			break;
-		}
-	}
-	return todoOk;
-}
-
 int pedirCadena(char cadena[], char mensaje[], int limite) {
 	int todoOk = 0;
 	char auxCad[100];
@@ -92,16 +89,6 @@ int pedirCadena(char cadena[], char mensaje[], int limite) {
 	return todoOk;
 }
 
-int mayusculaPrimerCaracter(char cadena[]) {
-	int todoOk = 0;
-	if (cadena != NULL) {
-		todoOk = 1;
-		strlwr(cadena);
-		cadena[0] = toupper(cadena[0]);
-	}
-	return todoOk;
-}
-
 int getInt(int *pResultado) {
 	int retorno = -1;
 	char buffer[4096];
@@ -110,6 +97,15 @@ int getInt(int *pResultado) {
 		*pResultado = atoi(buffer);
 	}
 	return retorno;
+}
+int mayusculaPrimerCaracter(char cadena[]) {
+	int todoOk = 0;
+	if (cadena != NULL) {
+		todoOk = 1;
+		strlwr(cadena);
+		cadena[0] = toupper(cadena[0]);
+	}
+	return todoOk;
 }
 
 int myGets(char *cadena, int longitud) {
@@ -155,16 +151,6 @@ int esNumerica(char *cadena) {
 	return retorno;
 }
 
-int getFloat(float *pResultado) {
-	int retorno = -1;
-	char buffer[4096];
-	if (myGets(buffer, sizeof(buffer)) && esNumericoFlotante(buffer)) {
-		retorno = 0;
-		*pResultado = atof(buffer);
-	}
-	return retorno;
-}
-
 int validarFloat(float *pResultado, char *mensaje, char *mensajeError,
 		float minimo, float maximo, int reintentos) {
 	int todoOk = 0;
@@ -185,6 +171,16 @@ int validarFloat(float *pResultado, char *mensaje, char *mensajeError,
 		} while (reintentos >= 0);
 	}
 	return todoOk;
+}
+
+int getFloat(float *pResultado) {
+	int retorno = -1;
+	char buffer[4096];
+	if (myGets(buffer, sizeof(buffer)) && esNumericoFlotante(buffer)) {
+		retorno = 0;
+		*pResultado = atof(buffer);
+	}
+	return retorno;
 }
 
 int esNumericoFlotante(char cadena[]) {

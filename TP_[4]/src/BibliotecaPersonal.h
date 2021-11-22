@@ -9,12 +9,7 @@
  */
 int encontrarParidad(int numero);
 
-/** \brief Pide el ingreso de un numero entero y lo retorna
- *
- * \return int
- *
- */
-int pedirEntero();
+
 
 /** \brief pide el ingreso de un numero entero dentro de un rango determinado que se pasa como min y max
  *
@@ -25,6 +20,13 @@ int pedirEntero();
  */
 int pedirEnteroRango(int min, int max);
 
+
+/** \brief Pide el ingreso de un numero entero y lo retorna
+ *
+ * \return int
+ *
+ */
+int pedirEntero();
 /// \brief valida si el numero que se le pasa es o no cero / devuelve 1 si no es 0 / devuelve 0 si es 0
 ///
 /// \param numero int
@@ -41,14 +43,6 @@ int validarDistintoDeCero(int numero);
 ///
 int validarDecimales(float numero);
 
-/** \brief recibe una cadena y devuelve el largo sin incluir \0
- *
- * \param vect[] char
- * \return int
- *
- */
-int miStrlen(char vect[]);
-
 /** \brief recibe una cadena y verifica que tenga letras u otros carcateres
  *
  * \param vect[] char
@@ -57,6 +51,13 @@ int miStrlen(char vect[]);
  */
 int validarCadena(char vect[]);
 
+/** \brief recibe una cadena y devuelve el largo sin incluir \0
+ *
+ * \param vect[] char
+ * \return int
+ *
+ */
+int miStrlen(char vect[]);
 /** \brief recibe una cadena donde guardara un string validado y con el primer caracter en mayuscula
  *
  * \param cadena[] char
