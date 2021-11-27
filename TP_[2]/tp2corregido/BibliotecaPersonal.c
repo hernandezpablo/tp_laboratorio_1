@@ -4,7 +4,7 @@
 #include <string.h>
 #include "BibliotecaPersonal.h"
 
-int encontrarParidad(int numero) {
+int encontrarPar(int numero) {
 	int todoOk = 0;
 	if (numero % 2 == 0) {
 		todoOk = 1;
@@ -79,7 +79,7 @@ int pedirCadena(char cadena[], char mensaje[], int limite) {
 		fflush(stdin);
 		gets(auxCad);
 
-		while (miStrlen(auxCad) > limite || validarCadena(auxCad) == 1) {
+		while (miStrlen(auxCad) > limite || validarCadena(auxCad) == 1 || miStrlen(auxCad) <3) {
 			printf("Por favor ingresar solo letras (maximo %d): ", limite);
 			fflush(stdin);
 			gets(auxCad);

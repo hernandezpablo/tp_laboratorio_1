@@ -7,7 +7,7 @@
  * \return int
  *
  */
-int encontrarParidad(int numero);
+int encontrarPar(int numero);
 
 /** \brief Pide el ingreso de un numero entero y lo retorna
  *
