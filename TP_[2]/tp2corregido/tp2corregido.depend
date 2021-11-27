@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1638023131 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\arrayemployee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployee.h"
+	"auxiliar.h"
+	"BibliotecaPersonal.h"
+
+1638021133 c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\arrayemployee.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1638021155 c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\auxiliar.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"arrayemployee.h"
+
+1637970877 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\bibliotecapersonal.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"BibliotecaPersonal.h"
+
+1637600437 c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\bibliotecapersonal.h
+
+1638021305 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"arrayemployee.h"
+	"BibliotecaPersonal.h"
+	"auxiliar.h"
+
+1638022518 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\auxiliar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"auxiliar.h"
+	"arrayemployee.h"
+	"BibliotecaPersonal.h"
+

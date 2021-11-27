@@ -11,13 +11,14 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "ArrayEmployee.h"
+#include "arrayemployee.h"
+#include "BibliotecaPersonal.h"
 #include "auxiliar.h"
 
 #define LEN 1000
 
 int main()
-{11
+{
     Employee list[LEN];
     char exit = 'n';
     char next = 'y';
@@ -36,11 +37,12 @@ int main()
             } else{
                 printf("You register an employee correctly \n");
             }
+             printEmployees(list, LEN);
             addedEmployee =1;
             break;
         case 2:
             if(addedEmployee ==0){
-                printf("You cant list employees without adding no employees\n");
+                printf("You cant change employees without adding no employees\n");
             } else{
             if (modifyEmployee(list, LEN) == 1){
                 printf("You have moddified an employee");
@@ -51,7 +53,7 @@ int main()
             break;
         case 3:
              if(addedEmployee ==0){
-                printf("You cant list employees without adding no employees\n");
+                printf("You cant remove employees without adding no employees\n");
             } else{
             if(removeEmployeeMenu(list, LEN) == -1){
                 printf("You couldnt remove that Employee correctly\n");
