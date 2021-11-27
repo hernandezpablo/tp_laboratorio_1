@@ -90,9 +90,6 @@ int removeEmployee(Employee* list, int len, int id){
 int printEmployees(Employee* list, int len){
 
     int todoOk = 0;
-    int flag =1;
-    float average = 0;
-    int overAverageEmployee;
     float totalSalary;
     int activeEmployees;
     if (list != NULL && len> 0)
@@ -112,26 +109,12 @@ int printEmployees(Employee* list, int len){
                 activeEmployees++;
 
 
-                flag =0;
             }
             }
-        average = totalSalary/activeEmployees;
-            for (int i=0; i < len; i++)
-        {
-            if(list[i].salary > average){
-                overAverageEmployee++;
-                }
-        }
-
-        if(flag == 1)
-        {
-            printf("No hay personas para mostrar");
-        }
-
         printf("-----------------------------------------\n");
-        printf("%-10s %-10s %-10s\n","Total Salaries-", "Average Salary-", "Total Employees over average salary");
+        printf("%-10s\n","Total Salaries-");
         fflush(stdin);
-        printf("%-10.2f%-10.2f%-10d\n", totalSalary, average, overAverageEmployee);
+        printf("%-10.2f\n", totalSalary);
         todoOk =1;
 
     }
@@ -260,3 +243,55 @@ if(list != NULL && len >0){
     }
     return todoOk;
 }
+int cobranEncimaPromedio(Employee* lista, int len, float salario, float totalSalario)
+{
+    int todoOk = -1;
+
+    int cont = 0;
+
+    salarioEmpleados(lista,len, &salario, &totalSalario);
+    if (lista !=NULL && len >0){
+
+        for(int i = 0; i < len; i++)
+        {
+            if (lista[i].isEmpty == 0 )
+            {
+                if(lista[i].salary > salario)
+                {
+                    cont++;
+                }
+            }
+        }
+        todoOk = 0;
+    }
+
+    printf("La cantidad de personas que cobran mas del promedio de los salarios totales es: %d \n", cont);
+
+    return todoOk;
+}
+int salarioEmpleados(Employee* lista, int len, float *pSalario, float *pTotalSalario)
+{
+    int todoOk = -1;
+    float auxSalario = 0;
+    int contSalario = 0;
+
+    if (lista != NULL && len > 0)
+    {
+        for(int i = 0; i < len; i++)
+        {
+            if (lista[i].isEmpty == 0 )
+            {
+                auxSalario += lista[i].salary;
+                contSalario++;
+            }
+        }
+        todoOk= 0;
+
+        *pSalario = (float)auxSalario /contSalario;
+        *pTotalSalario = auxSalario;
+
+    }
+
+    return todoOk;
+}
+

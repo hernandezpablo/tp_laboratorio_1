@@ -91,3 +91,5 @@ int sortEmployees(Employee* list, int len, int order);
 int printEmployees(Employee list[], int len);
 
 #endif // ARRAYEMPLOYEE_H_INCLUDED
+int salarioEmpleados(Employee* lista, int len, float *pSalario, float *pTotalSalario);
+int cobranEncimaPromedio(Employee* lista, int len, float salario, float totalSalario);

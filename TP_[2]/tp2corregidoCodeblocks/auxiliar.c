@@ -17,6 +17,7 @@ int menu()
     printf("3- Remove Employee\n");
     printf("4- List Employees\n");
     printf("5- Exit\n");
+    printf("6- Show salary average\n");
     printf("Enter an option: \n");
     scanf("%d", &option);
 

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1638023131 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\arrayemployee.c
+1638025433 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\arrayemployee.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -8,7 +8,7 @@
 	"auxiliar.h"
 	"BibliotecaPersonal.h"
 
-1638021133 c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\arrayemployee.h
+1638025295 c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\arrayemployee.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -21,16 +21,16 @@
 	<ctype.h>
 	"arrayemployee.h"
 
-1637970877 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\bibliotecapersonal.c
+1638024052 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\bibliotecapersonal.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
 	<string.h>
 	"BibliotecaPersonal.h"
 
-1637600437 c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\bibliotecapersonal.h
+1638024053 c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\bibliotecapersonal.h
 
-1638023429 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\main.c
+1638025245 source:c:\users\pablu\documents\programacion\tp_laboratorio_1\tp_laboratorio_1_eclipse\tp_[2]\tp2corregido\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>

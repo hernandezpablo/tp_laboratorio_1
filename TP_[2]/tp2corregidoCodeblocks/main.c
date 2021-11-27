@@ -19,11 +19,14 @@
 
 int main()
 {
+
     Employee list[LEN];
     char exit = 'n';
     char next = 'y';
     int nextId = 0;
     int addedEmployee = 0;
+    float fullSalario;
+    float totalSalario;
     if(initEmployees(list, LEN) == -1 ){
         printf("Error in the space or null pointer!\n");
     }
@@ -84,6 +87,24 @@ int main()
                 break;
                 }
             break;
+        case 6:
+             if (addedEmployee ==0)
+	            {
+	                printf("You dont have employees to enter this option: \n");
+	            }
+	            else
+	            {
+	                if (salarioEmpleados(list, LEN, &fullSalario, &totalSalario))
+	                {
+	                    printf("No se pudo promediar el salario de  las personas\n");
+	                }
+	                else
+	                {
+	                    printf("El total a pagar por salarios es de %.2f y el promedio de salario es de : %.2f\n", totalSalario ,fullSalario);
+	                    cobranEncimaPromedio(list, LEN,fullSalario, totalSalario);
+	                }
+	            }
+	            break;
         default:
              printf("Invalid Option!!!\n");
              break;
